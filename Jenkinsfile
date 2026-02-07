@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build with Maven') {
             steps {
-                sh 'mvn clean package'
+                bat 'mvn clean package'
             }
         }
 
@@ -27,7 +27,7 @@ pipeline {
                     tomcat9(
                         credentialsId: 'tomcat-creds',
                         path: '',
-                        url: 'http://localhost:8080'
+                        url: 'http://localhost:8081'
                     )
                 ],
                 contextPath: 'my-webapp',
