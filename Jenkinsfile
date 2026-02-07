@@ -10,8 +10,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/SupriyaJoshi2022-github/expt4_devops.git',
-                 credentialsId: 'github-creds'
+                git branch: 'main', url: 'https://github.com/SupriyaJoshi2022-github/expt4_devops.git'
+                 
             }
         }
 
